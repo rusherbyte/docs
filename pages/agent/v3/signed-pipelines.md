@@ -108,9 +108,9 @@ The solution here is to add static signatures to the steps in your pipeline's co
 buildkite-agent pipeline upload --jwks-file-path <path to private keys> --signing-key-id <key id> --dry-run --format yaml <path to pipeline file>
 ```
 
-For example, if you had a file called `pipeline.yml` in the current directory, and you wanted to sign it with the key we generated earlier, you'd run:
+For example, if you had a file called `pipeline.yaml` in the current directory, and you wanted to sign it with the key we generated earlier, you'd run:
 ```bash
-buildkite-agent pipeline upload --jwks-file-path /path/to/private/key.json --signing-key-id my-key-id --dry-run --format yaml configured-steps.yml
+buildkite-agent pipeline upload --jwks-file-path /path/to/private/key.json --signing-key-id my-key-id --dry-run --format yaml configured-steps.yaml
 ```
 
 This will output the pipeline YAML, with the signatures added to the steps. You can then copy this YAML back into the editor on the pipeline's page in Buildkite, and save it.
