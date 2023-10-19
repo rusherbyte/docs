@@ -1,5 +1,7 @@
 # Signed pipelines
 
+> ⚠️ Warning: Signed Pipelines are experimental, and these docs (and the commands and arguments referenced in them) are subject to change. This is also an opt-in feature - if you're keen to get your hands on it, talk to your sales rep.
+
 ## What are signed pipelines?
 
 Signed Pipelines is a security feature on the Buildkite Agent that allows you to cryptographically sign steps that are uploaded to Buildkite, and then verify that signature on the Buildkite Agent before running the step. This signature helps agents establish the provenance of the jobs that they are instructed to run - asserting that the steps were uploaded by a trusted agent, and that they haven't been modified since they were uploaded. If an agent detects a signature mismatch, by default, it'll refuse to run the job.
