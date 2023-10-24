@@ -103,7 +103,7 @@ job-verification-jwks-path=<path to verification keys>
 
 ### 3. Signing the pipeline's configured steps
 
-Builds in Buildkite pipelines are initialized using steps that are configured on the pipeline itself. In the course of running a job, the Buildkite Agent can upload further steps to the pipeline. We will refer to the former as "configured steps" and the latter as "uploaded steps". It's common for the configured steps to be a single step that uploads the remainder of pipeline from [a YAML file in the repository](link to info about ./buildkite.yaml).
+Builds in Buildkite pipelines are initialized using steps that are configured on the pipeline itself. In the course of running a job, the Buildkite Agent can upload further steps to the pipeline. We will refer to the former as "configured steps" and the latter as "uploaded steps". It's common for the configured steps to be a single step that uploads the remainder of pipeline from [a YAML file in the repository](/docs/pipelines/defining-steps#step-defaults-pipeline-dot-yml-file).
 
 > Some older Buildkite pipelines don't use YAML for their configured steps - these can't be signed, and will have to be migrated to use the new format to be used with signed pipelines - see [Migrating to YAML steps](/docs/tutorials/pipeline_upgrade)
 
