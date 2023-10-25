@@ -21,7 +21,7 @@ These signatures mean that if a threat actor could modify a job in flight, the a
     <li>It couldn't sign <a href="/docs/pipelines/build-matrix">matrix steps</a>.</li>
   </ul>
   <p>This newer version of pipeline signing is built right into the agent and addresses all of these limitations. Being built into the agent, it's also easier to configure and use.</p>
-  <p>Many thanks to <a href="seek.com.au">SEEK</a>, who we collaborated with on the older version of the tool, and whose prior art has been instrumental in the development of this newer version.</p>
+  <p>Many thanks to <a href="https://www.seek.com.au/">SEEK</a>, who we collaborated with on the older version of the tool, and whose prior art has been instrumental in the development of this newer version.</p>
 </details>
 
 ## Pipeline signatures
