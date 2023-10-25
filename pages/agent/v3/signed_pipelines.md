@@ -44,7 +44,6 @@ Additionally, the following aspects of the build for each job are included in th
 - The repo the build is running for [WIP]
 - The commit the build is running for [WIP]
 
-
 ## Enabling signed pipelines on your agents
 
 You'll need to configure your agents and update pipeline definitions to enable signed pipelines.
