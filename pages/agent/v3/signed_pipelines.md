@@ -126,7 +126,7 @@ So far, you've configured agents to sign and verify any steps they upload and ru
 
 To sign steps configured in the Buildkite dashboard, you need to add static signatures to the YAML:
 
-1. Copy the existing YAML steps definition from the editor in the Builkdite dashboard.
+1. Copy the existing YAML steps definition from the editor in the Buildkite dashboard.
 1. Paste the step definitions into a file on your machine.
 1. Generate a new YAML definition with signatures by running:
 
