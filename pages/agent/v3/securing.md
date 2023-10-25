@@ -120,7 +120,7 @@ But also remember that some [environment variables may be essential](/docs/pipel
 
 ## Signing pipelines
 
-The steps that your pipeline runs can be signed for extra security; this allows the agent to verify that the the steps it runs haven't been tampered with, or smuggled from one pipeline to another. For more information, see [Signed Pipelines](/docs/agent/v3/signed-pipelines).
+You can sign the steps your pipeline runs for extra security. This allows the agent to verify that the steps it runs haven't been tampered with or smuggled from one pipeline to another. For more information, see [Signed pipelines](/docs/agent/v3/signed-pipelines).
 
 ## Allowing a list of plugins
 
