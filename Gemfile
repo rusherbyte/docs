@@ -33,7 +33,7 @@ gem "rouge", "3.3.0"
 gem "escape_utils"
 
 # One rails log line per request, instead of enraging quantity
-gem "lograge"
+gem "lograge", ">= 0.13.0"
 
 # Error reporting
 gem "bugsnag"
@@ -47,7 +47,7 @@ gem 'matrix'
 gem 'vite_rails'
 
 # No page reloads
-gem 'turbo-rails'
+gem 'turbo-rails', '>= 1.5.0'
 
 # Sitemap
 gem 'sitemap_generator'
@@ -67,7 +67,7 @@ end
 
 group :test do
   # Who doesn't love tests!?
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 6.0.0"
 
   # We want junit output so we can annotate the build
   gem "rspec_junit_formatter"
