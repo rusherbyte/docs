@@ -6,10 +6,10 @@ ruby File.read(".ruby-version").strip
 source "https://rubygems.org"
 
 # Choo choo 🚝 (only include the Rails gems we need)
-gem "actionpack", "~> 6.1"
+gem "actionpack", "~> 6.1", ">= 6.1.7.8"
 gem "actionview", "~> 6.0"
 gem "activesupport", "~> 6.1"
-gem "railties", "~> 6.0"
+gem "railties", "~> 6.1", ">= 6.1.7.8"
 
 # Use Puma as the app server
 gem "puma"
@@ -33,7 +33,7 @@ gem "rouge", "3.3.0"
 gem "escape_utils"
 
 # One rails log line per request, instead of enraging quantity
-gem "lograge"
+gem "lograge", ">= 0.13.0"
 
 # Error reporting
 gem "bugsnag"
@@ -44,10 +44,10 @@ gem 'front_matter_parser'
 gem 'matrix'
 
 # Asset compilation
-gem 'vite_rails'
+gem 'vite_rails', '>= 3.0.15'
 
 # No page reloads
-gem 'turbo-rails'
+gem 'turbo-rails', '>= 1.5.0'
 
 # Sitemap
 gem 'sitemap_generator'
@@ -55,19 +55,19 @@ gem 'sitemap_generator'
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
-  gem "dotenv-rails"
+  gem "dotenv-rails", ">= 3.0.0"
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling `console` anywhere in the code.
-  gem "web-console"
+  gem "web-console", ">= 4.2.1"
   gem "pry"
   gem 'graphql-client'
 end
 
 group :test do
   # Who doesn't love tests!?
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 6.0.0"
 
   # We want junit output so we can annotate the build
   gem "rspec_junit_formatter"
