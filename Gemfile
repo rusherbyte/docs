@@ -47,7 +47,7 @@ gem 'matrix'
 gem 'vite_rails'
 
 # No page reloads
-gem 'turbo-rails'
+gem 'turbo-rails', '>= 2.0.13'
 
 # Sitemap
 gem 'sitemap_generator'
